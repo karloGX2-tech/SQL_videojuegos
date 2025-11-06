@@ -2,7 +2,7 @@
 include "dbconnect.php";
 
 $idconsolas = $_GET["idconsolas"];
-$sql = "SELECT IdConsola, consolas.NombreConsola, PrecioConsola, ImagenConsolaGrande, PromedioEstrellas, DescripcionConsola, categoria.Nombre AS categoria
+$sql = "SELECT IdConsola, consolas.NombreConsola, PrecioConsola, FechaConsola, ImagenConsolaGrande, PromedioEstrellas, DescripcionConsola, categoria.Nombre AS categoria
         FROM consolas
         INNER JOIN categoria
         ON consolas.IdCategoria = categoria.IdCategoria
